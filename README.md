@@ -2,6 +2,9 @@
 
 Automatically compile pokenum.so for PHP use, and create a dev environment for pokersource on Ubuntu 12.04 via vagrant.
 
+## Disclaimer
+
+The supplied Vagrantfile assumes ubuntu/debian and only tested against ubuntu 12.04 -- Sorry.
 
 ## Usage
 
