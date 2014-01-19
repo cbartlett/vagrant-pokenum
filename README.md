@@ -46,4 +46,7 @@ vagrant ssh
 
 ## Todo
 
-The supplied `Vagrantfile` assumes ubuntu/debian and only tested against ubuntu 12.04 -- Sorry.
+* The supplied `Vagrantfile` assumes ubuntu/debian and only tested against ubuntu 12.04
+* install apache
+* add some sort of mechanism to provide a choice of which os, webserver
+* feed this into packer.io (or whatever the way it is) so you can have an AMI or VMDK outputted also
