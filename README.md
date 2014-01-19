@@ -9,9 +9,7 @@ You, dear reader, might have always wanted the twodimes.net calculator (http://t
 
 ... pokenum-in-a-box (ok it's just a `Vagrantfile`) does the above. Now you can focus on the application. This empowers all those PHP developers who don't want to bother with the above. 
 
-## Disclaimer
 
-The supplied Vagrantfile assumes ubuntu/debian and only tested against ubuntu 12.04 -- Sorry.
 
 ## Usage
 
@@ -42,3 +40,7 @@ vagrant up
 now ssh in
 vagrant ssh
 ```
+
+## Todo
+
+The supplied `Vagrantfile` assumes ubuntu/debian and only tested against ubuntu 12.04 -- Sorry.
