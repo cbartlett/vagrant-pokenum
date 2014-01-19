@@ -1,6 +1,6 @@
 ## About
 
-You, dear reader, might have always wanted the twodimes.net calculator (http://twodimes.net/poker/) for your own purposes. But there's been a barrier to entry for this. In the past you'd have to: 
+For whatever reason(s), you may have always has the burning desire to have your own twodimes.net calculator (http://twodimes.net/poker/). But there's been a barrier to entry for this. In the past you'd have to: 
 
 * install linux
 * hunt down and install pokersource
