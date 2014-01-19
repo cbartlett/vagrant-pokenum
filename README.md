@@ -13,6 +13,8 @@ You, dear reader, might have always wanted the twodimes.net calculator (http://t
 
 ## Usage
 
+Basically take the `vagrantfile` and do a `vagrant up` -- it could totally be true that putting this in github is overkill but I feel like it.
+
 First, some assumptions: I'm assuming (all i've tested): 
 
 * OSX 10.9 (Mavericks)
