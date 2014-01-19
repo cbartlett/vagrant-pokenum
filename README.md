@@ -1,6 +1,13 @@
 ## About
 
-Automatically compile pokenum.so for PHP use, and create a dev environment for pokersource on Ubuntu 12.04 via vagrant.
+You, dear reader, might have always wanted the twodimes.net calculator (http://twodimes.net/poker/) for your own purposes. But there's been a barrier to entry for this. In the past you'd have to: 
+
+* install linux
+* hunt down and install pokersource
+* create a PHP shared object
+* configure your php.ini with that .so file
+
+... pokenum-in-a-box (ok it's just a `Vagrantfile`) does the above. Now you can focus on the application. This empowers all those PHP developers who don't want to bother with the above. 
 
 ## Disclaimer
 
