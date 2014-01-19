@@ -23,7 +23,7 @@ ubuntu-lucid64 (virtualbox)
 ```
 
 
-Basically, run vagrant against the supplied Vagrantfile. 
+Basically, run vagrant against the supplied `Vagrantfile`. 
 ```
 mkdir -p ~/vagrant/pokenum-in-a-box
 cd ~/vagrant/pokenum-in-a-box
