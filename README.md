@@ -12,6 +12,19 @@ First, some assumptions: I'm assuming (all i've tested):
 * Ubuntu 12.04 guest (precise)
 * vagrant 1.4.2 installed 
 
+my `vagrant box list` looks like this: 
+
+```
+$ vagrant box list
+centos_6.4     (virtualbox)
+lucid32        (virtualbox)
+precise32      (virtualbox)
+precise64      (virtualbox)
+ubuntu-lucid64 (virtualbox)
+```
+
+
+Basically, run vagrant against the supplied Vagrantfile. 
 ```
 mkdir -p ~/vagrant/pokenum-in-a-box
 cd ~/vagrant/pokenum-in-a-box
