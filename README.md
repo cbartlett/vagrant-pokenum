@@ -18,3 +18,4 @@ First, some assumptions: I'm assuming (all i've tested):
     vagrant up
     now ssh in
     vagrant ssh
+
