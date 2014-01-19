@@ -16,7 +16,7 @@ Basically take the `VagrantFile` and do a `vagrant up` -- it could totally be tr
 
 ## Usage
 
-First, some assumptions: I'm assuming (all i've tested): 
+First, some assumptions: I'm assuming (sorry, i'm selfish and I have only tested my particular environment/setup): 
 
 * OSX 10.9 (Mavericks)
 * VirtualBox 4.3.6
