@@ -10,10 +10,11 @@ You, dear reader, might have always wanted the twodimes.net calculator (http://t
 ... pokenum-in-a-box (ok it's just a `Vagrantfile`) does the above. Now you can focus on the application. This empowers all those PHP developers who don't want to bother with the above. 
 
 
+## Quick Start 
+
+Basically take the `VagrantFile` and do a `vagrant up` -- it could totally be true that putting this in github is overkill but I feel like it.
 
 ## Usage
-
-Basically take the `vagrantfile` and do a `vagrant up` -- it could totally be true that putting this in github is overkill but I feel like it.
 
 First, some assumptions: I'm assuming (all i've tested): 
 
