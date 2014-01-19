@@ -15,7 +15,6 @@ First, some assumptions: I'm assuming (all i've tested):
 my `vagrant box list` looks like this: 
 
 ```
-$ vagrant box list
 centos_6.4     (virtualbox)
 lucid32        (virtualbox)
 precise32      (virtualbox)
