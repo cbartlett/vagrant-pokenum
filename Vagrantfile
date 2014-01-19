@@ -17,7 +17,6 @@ make
 make install
 SCRIPT
 
-
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.box = "precise64"
