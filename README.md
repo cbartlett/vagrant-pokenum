@@ -2,10 +2,10 @@
 
 For whatever reason(s), you may have always has the burning desire to have your own twodimes.net calculator (http://twodimes.net/poker/). But there's been a barrier to entry for this. In the past you'd have to: 
 
-* install linux
-* hunt down and install pokersource
-* create a PHP shared object
-* configure your php.ini with that .so file
+* install linux (via a vagrant box)
+* hunt down and install pokersource (`apt-get install libpoker-eval libpoker-eval-dev`)
+* create a PHP shared object (compile it to a `pokenum.so` file)
+
 
 ... pokenum-in-a-box (ok it's just a `Vagrantfile`) does the above. Now you can focus on the application. This empowers all those PHP developers who don't want to bother with the above. 
 
@@ -13,6 +13,8 @@ For whatever reason(s), you may have always has the burning desire to have your 
 ## Quick Start 
 
 Basically take the `VagrantFile` and do a `vagrant up` -- it could totally be true that putting this in github is overkill but I feel like it.
+
+Step 2, for now: configure your `php.ini` with that `.so` file
 
 ## Usage
 
