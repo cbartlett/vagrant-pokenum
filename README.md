@@ -12,9 +12,9 @@ For whatever reason(s), you may have always has the burning desire to have your 
 
 ## Quick Start 
 
-Basically take the `VagrantFile` and do a `vagrant up` -- it could totally be true that putting this in github is overkill but I feel like it.
+Step 1 - take the `VagrantFile` and do a `vagrant up` -- it could totally be true that putting this in github is overkill but I feel like it.
 
-Step 2, for now: configure your `php.ini` with that `.so` file
+Step 2 - configure your `php.ini` with that `.so` file
 
 ## Usage
 
