@@ -5,16 +5,18 @@ For whatever reason(s), you may have always has the burning desire to have your 
 * install linux (via a vagrant box)
 * hunt down and install pokersource (`apt-get install libpoker-eval libpoker-eval-dev`)
 * create a PHP shared object (compile it to a `pokenum.so` file)
+* configure php.ini 
 
+... pokenum-in-a-box (ok it's just a `Vagrantfile`) does the above. Now you can automatically top into pokenum results as a PHP array. 
 
-... pokenum-in-a-box (ok it's just a `Vagrantfile`) does the above. Now you can focus on the application. This empowers all those PHP developers who don't want to bother with the above. 
+## Why 
 
+I currently (Jan 2014) need a reason to use git/vagrant and always wanted to tap into pokersource in an easy, portable way.
 
 ## Quick Start 
 
-Step 1 - take the `VagrantFile` and do a `vagrant up` -- it could totally be true that putting this in github is overkill but I feel like it.
+Do a `vagrant up` in the same directory as `VagrantFile`.
 
-Step 2 - configure your `php.ini` with that `.so` file
 
 ## Usage
 
@@ -24,25 +26,16 @@ First, some assumptions: I'm assuming (sorry, i'm selfish and I have only tested
 * VirtualBox 4.3.6
 * Ubuntu 12.04 guest (precise)
 * vagrant 1.4.2 installed 
-
-my `vagrant box list` looks like this: 
-
-```
-centos_6.4     (virtualbox)
-lucid32        (virtualbox)
-precise32      (virtualbox)
-precise64      (virtualbox)
-ubuntu-lucid64 (virtualbox)
-```
+* Chef 10.8.2 (on guest host installed via Vagrant)
 
 
-Basically, run vagrant against the supplied `Vagrantfile`. 
+Basically, run vagrant against the supplied `Vagrantfile`. The chef-solo run is straightforward/simple but for those unfamiliar with chef, Vagrant will do a chef-solo run against `~/cookbooks/pokenum/recipes/default.rb`
 ```
 mkdir -p ~/vagrant/pokenum-in-a-box
 cd ~/vagrant/pokenum-in-a-box
 git clone https://github.com/j-c-h-e-n-g/pokenum-in-a-box.git
 vagrant up
-now ssh in
+# now ssh in
 vagrant ssh
 ```
 
