@@ -4,6 +4,8 @@
 # Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
 VAGRANTFILE_API_VERSION = "2"
 
+# for those of you unfamiliar w/ chef-solo runs, this will run whatever is in 
+# ~/cookbooks/pokenum/recipe/default.rb
 $script = <<SCRIPT
 
 if [ ! -f /usr/local/bin/chef-solo ]; then 
