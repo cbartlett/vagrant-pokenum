@@ -13,14 +13,6 @@ if [ ! -f /usr/local/bin/chef-solo ]; then
   gem install chef --no-ri --no-rdoc
 fi
 
-#apt-get -y install php5-dev git libpoker-eval libpoker-eval-dev
-
-#git clone https://github.com/j-c-h-e-n-g/pokenum-php.git
-#cd pokenum-php
-#phpize
-#./configure --enable-pokenum
-#make
-#make install
 SCRIPT
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
@@ -28,13 +20,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box_url = "http://dl.dropbox.com/u/1537815/precise64.box"
   
   config.vm.box = "precise64"
-  config.vm.provision "shell", inline: $script
 
   config.vm.provision :chef_solo do |chef|
      chef.cookbooks_path = "./cookbooks"
      chef.add_recipe "pokenum"
-  #  chef.json = { :mysql_password => "foo" }
-   end
 
+   end
 
 end
