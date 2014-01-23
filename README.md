@@ -9,6 +9,8 @@ For whatever reason(s), you may have always has the burning desire to have your 
 
 ... pokenum-in-a-box (ok it's just a `Vagrantfile`) does the above. Now you can automatically top into pokenum results as a PHP array. 
 
+For the cynical internet techies out there: Ok! I admit. This is nothing special. It's just vagrant doing a chef-solo run.
+
 ## Why 
 
 I currently (Jan 2014) need a reason to use git/vagrant and always wanted to tap into pokersource in an easy, portable way.
