@@ -20,7 +20,8 @@ I currently (Jan 2014) need a reason to use git/vagrant and always wanted to tap
 Do a `vagrant up` in the same directory as `VagrantFile`.
 
 
-## Usage
+
+## Prerequisites & Assumptions
 
 First, some assumptions: I'm assuming (sorry, i'm selfish and I have only tested my particular environment/setup): 
 
@@ -30,6 +31,7 @@ First, some assumptions: I'm assuming (sorry, i'm selfish and I have only tested
 * vagrant 1.4.2 installed 
 * Chef 10.8.2 (on guest host installed via Vagrant)
 
+## Usage
 
 Basically, run vagrant against the supplied `Vagrantfile`. The chef-solo run is straightforward/simple but for those unfamiliar with chef, Vagrant will do a chef-solo run against `~/cookbooks/pokenum/recipes/default.rb`
 ```
