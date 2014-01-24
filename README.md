@@ -28,7 +28,7 @@ For the cynical internet techies out there: Ok! I admit. This is nothing special
 
 ## Why 
 
-I currently (Jan 2014) need a reason to use git/vagrant and always wanted to tap into pokersource in an easy, portable way.
+I currently (Jan 2014) need a reason to use git/vagrant and always wanted to tap into pokersource in an easy, portable way. Also to have my own pokenum because... because us Americans live in an ownership culture. Also I just think it's cool.
 
 
 
