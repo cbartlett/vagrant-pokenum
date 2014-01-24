@@ -1,3 +1,18 @@
+## Quick Start 
+
+Do a `vagrant up` in the same directory as `VagrantFile`.
+
+
+## Prerequisites & Assumptions
+
+First, some assumptions: I'm assuming (sorry, i'm selfish and I have only tested my particular environment/setup): 
+
+* OSX 10.9 (Mavericks)
+* VirtualBox 4.3.6
+* Ubuntu 12.04 guest (precise)
+* vagrant 1.4.2 installed 
+* Chef 10.8.2 (on guest host installed via Vagrant)
+
 ## About
 
 For whatever reason(s), you may have always has the burning desire to have your own twodimes.net calculator (http://twodimes.net/poker/). But there's been a barrier to entry for this. In the past you'd have to: 
@@ -15,21 +30,7 @@ For the cynical internet techies out there: Ok! I admit. This is nothing special
 
 I currently (Jan 2014) need a reason to use git/vagrant and always wanted to tap into pokersource in an easy, portable way.
 
-## Quick Start 
 
-Do a `vagrant up` in the same directory as `VagrantFile`.
-
-
-
-## Prerequisites & Assumptions
-
-First, some assumptions: I'm assuming (sorry, i'm selfish and I have only tested my particular environment/setup): 
-
-* OSX 10.9 (Mavericks)
-* VirtualBox 4.3.6
-* Ubuntu 12.04 guest (precise)
-* vagrant 1.4.2 installed 
-* Chef 10.8.2 (on guest host installed via Vagrant)
 
 ## Usage
 
