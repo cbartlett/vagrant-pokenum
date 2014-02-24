@@ -1,9 +1,5 @@
-#
-# Cookbook Name:: pokenum
 # Recipe:: default
 #
-#
-
 
 %w{libpoker-eval libpoker-eval-dev php5-dev php5-cli git}.each do |pkg|
   package pkg do
@@ -25,16 +21,45 @@ template '/tmp/test.php' do
   group "root"
 end
 
-execute "install pokenum" do
-  command "echo 'installing pokenum...'"
+execute "git-clone-pokenum-php" do
   cwd "/tmp"
-  command "rm -fr /tmp/pokenum-php; git clone https://github.com/j-c-h-e-n-g/pokenum-php.git; phpize"
-  command "./configure --enable-pokenum"
+  command "git clone https://github.com/j-c-h-e-n-g/pokenum-php.git"
+  action :run
+  not_if { ::File.exists?("/tmp/pokenum-php") }
+end
+ 
+execute "phpize" do
   cwd "/tmp/pokenum-php"
-  command "make && make install"
+  command "/usr/bin/phpize"
+  action :run
+  not_if { ::File.exists?("/var/run/pokenum.installed") }
+end 
+
+execute "configure" do 
+  cwd "/tmp/pokenum-php"
+  command "./configure --enable-pokenum"
+  action :run
+  not_if { ::File.exists?("/var/run/pokenum.installed") }
+end 
+
+execute "make" do 
+  cwd "/tmp/pokenum-php"
+  command "make"
+  action :run
+  not_if { ::File.exists?("/var/run/pokenum.installed") }
+end
+
+execute "make-install" do 
+  cwd "/tmp/pokenum-php"
+  command "make install"
+  action :run
+  not_if { ::File.exists?("/var/run/pokenum.installed") }
+end
+
+execute "make-install" do 
   command "touch /var/run/pokenum.installed"
   action :run
-not_if { ::File.exists?("/var/run/pokenum.installed") }
+  not_if { ::File.exists?("/var/run/pokenum.installed") }
 end
 
 

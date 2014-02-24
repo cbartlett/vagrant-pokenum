@@ -6,8 +6,9 @@ VAGRANTFILE_API_VERSION = "2"
 
 # for those of you unfamiliar w/ chef-solo runs, this will run whatever is in 
 # ~/cookbooks/pokenum/recipe/default.rb
-$script = <<SCRIPT
 
+# boostrap chef-solo if it's not there
+$script = <<SCRIPT
 if [ ! -f /usr/local/bin/chef-solo ]; then 
   apt-get update
   echo "chef not found! installing chef ..."
