@@ -42,6 +42,50 @@ git clone https://github.com/j-c-h-e-n-g/pokenum-in-a-box.git
 vagrant up
 # now ssh in
 vagrant ssh
+# now that you're vagrant user in ssh
+sudo php /tmp/test.php
+```
+...and you should see this output: 
+
+```
+Array
+(
+    [name] => Holdem Hi
+    [players] => 2
+    [iterations] => 100000
+    [hands] => Array
+        (
+            [0] => Array
+                (
+                    [hand] => Array
+                        (
+                            [0] => Ac
+                            [1] => Ah
+                        )
+
+                    [win] => 81742
+                    [lose] => 17778
+                    [tie] => 480
+                    [ev] => 0.81982
+                )
+
+            [1] => Array
+                (
+                    [hand] => Array
+                        (
+                            [0] => Kc
+                            [1] => Kd
+                        )
+
+                    [win] => 17778
+                    [lose] => 81742
+                    [tie] => 480
+                    [ev] => 0.18018
+                )
+
+        )
+
+)
 ```
 
 ## Todo
