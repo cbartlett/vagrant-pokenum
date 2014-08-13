@@ -96,7 +96,7 @@ dl("pokenum.so");
 print_r(pokenum(PN_OMAHA, array('Ah Ac Kd Kc', 'Jd Qd Tc 9c')));
 ```
 
-... and it's output will be something like: 
+... and it's output will show you this is yet another 60/40 situation: 
 
 ```
 Array
