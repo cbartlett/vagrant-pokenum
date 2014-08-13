@@ -3,9 +3,9 @@
 Do a `vagrant up` in the same directory as `VagrantFile`.
 
 
-## Prerequisites & Assumptions
+## Assumptions
 
-First, some assumptions: I'm assuming (sorry, i'm selfish and I have only tested my particular environment/setup): 
+Vagrant launches a ubuntu 12.04 guest and then calls chef-solo. Specifically the following were used:
 
 * OSX 10.9 (Mavericks)
 * VirtualBox 4.3.6
@@ -22,9 +22,8 @@ For whatever reason(s), you may have always has the burning desire to have your 
 * create a PHP shared object (compile it to a `pokenum.so` file)
 * configure php.ini 
 
-... pokenum-in-a-box (ok it's just a `Vagrantfile`) does the above. Now you can automatically top into pokenum results as a PHP array. 
+... this does the above. Now you can automatically top into pokenum results as a PHP array. 
 
-For the cynical internet techies out there: Ok! I admit. This is nothing special. It's just vagrant doing a chef-solo run.
 
 ## Why 
 
@@ -38,8 +37,6 @@ Why not?
 Run vagrant against the supplied `Vagrantfile`. The chef-solo run is straightforward/simple but for those unfamiliar with chef, Vagrant will do a chef-solo run against `~/cookbooks/pokenum/recipes/default.rb`:
 
 ```
-mkdir -p ~/vagrant/pokenum-in-a-box
-cd ~/vagrant/pokenum-in-a-box
 git clone https://github.com/j-c-h-e-n-g/pokenum-in-a-box.git
 vagrant up
 # now ssh in
@@ -89,6 +86,63 @@ Array
 
 )
 ```
+
+...but wait, Hold'em sucks! Omaha is the game of the future. Let's run this instead: 
+
+
+```
+ini_set("enable_dl", 1) ;
+dl("pokenum.so");
+print_r(pokenum(PN_OMAHA, array('Ah Ac Kd Kc', 'Jd Qd Tc 9c')));
+```
+
+... and it's output will be something like: 
+
+```
+Array
+(
+    [name] => Omaha Hi
+    [players] => 2
+    [iterations] => 100000
+    [hands] => Array
+        (
+            [0] => Array
+                (
+                    [hand] => Array
+                        (
+                            [0] => Ac
+                            [1] => Kc
+                            [2] => Kd
+                            [3] => Ah
+                        )
+
+                    [win] => 61511
+                    [lose] => 38471
+                    [tie] => 18
+                    [ev] => 0.6152
+                )
+
+            [1] => Array
+                (
+                    [hand] => Array
+                        (
+                            [0] => Tc
+                            [1] => 9c
+                            [2] => Qd
+                            [3] => Jd
+                        )
+
+                    [win] => 38471
+                    [lose] => 61511
+                    [tie] => 18
+                    [ev] => 0.3848
+                )
+
+        )
+
+)
+```
+
 
 ## Todo
 
