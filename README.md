@@ -28,13 +28,15 @@ For the cynical internet techies out there: Ok! I admit. This is nothing special
 
 ## Why 
 
-I currently (Jan 2014) need a reason to use git/vagrant and always wanted to tap into pokersource in an easy, portable way. Also to have my own pokenum because... because us Americans live in an ownership culture. Also I just think it's cool.
+Why not? 
 
+... well if I have to explain, I simply want my own pokenum to tinker with. Tinkering is the reason.
 
 
 ## Usage
 
-Basically, run vagrant against the supplied `Vagrantfile`. The chef-solo run is straightforward/simple but for those unfamiliar with chef, Vagrant will do a chef-solo run against `~/cookbooks/pokenum/recipes/default.rb`
+Run vagrant against the supplied `Vagrantfile`. The chef-solo run is straightforward/simple but for those unfamiliar with chef, Vagrant will do a chef-solo run against `~/cookbooks/pokenum/recipes/default.rb`:
+
 ```
 mkdir -p ~/vagrant/pokenum-in-a-box
 cd ~/vagrant/pokenum-in-a-box
